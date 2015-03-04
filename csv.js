@@ -11,7 +11,7 @@ function calculate() {
   var result;
   var original       = document.getElementById("original");
   var temp = original.value;
-  var regexp = /"((?:[^"\\]|\\.)*)"\s*,?/g;
+  var regexp = /\s*"((?:[^"\\]|\\.)*)"\s*,?|\s*([^,]+),?|\s*,/g;
   var lines = temp.split(/\n+\s*/);
   var commonLength = NaN;
   var r = [];

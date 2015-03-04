@@ -1,17 +1,28 @@
+<!doctype html>
 <html>
 <head>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
- // we will add our javascript code here
- $(document).ready(function() {
-   $("a").click(function() {
-     alert("Hello world!");
-   });
- });
-</script>                             
-</head>                              
+    <meta charset="utf-8" />
+    <style>
+        a.test { font-weight: bold; }
+    </style>
+    <title>Demo</title>
+</head>
 <body>
- <!-- we will add our HTML content here -->
- <a href="">Link</a>
+    <a href="http://jquery.com/">jQuery</a>
+    <script src="starterkit/jquery.js"></script>
+    <script>
+ 
+    $( document ).ready(function() {
+        $( "a" ).click(function( event ) {
+            $( "a" ).addClass( "test" );
+            alert( "The link will no longer take you to jquery.com" );
+            event.preventDefault();
+            $( "a" ).removeClass( "test" );
+            $( this ).hide( "slow" );
+            $( this ).show( "slow" );
+        });
+    });
+ 
+    </script>
 </body>
 </html>
