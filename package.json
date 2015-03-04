@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/alu0100766950/CSV/issues"
   },
-  "homepage": "https://github.com/alu0100766950/CSV"
+  "homepage": "https://github.com/alu0100766950/CSV",
+  "devDependencies": {
+    "underscore": "^1.8.2"
+  }
 }
