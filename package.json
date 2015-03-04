@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/alu0100766950/CSV",
   "devDependencies": {
+    "jquery": "^2.1.3",
     "underscore": "^1.8.2"
   }
 }
