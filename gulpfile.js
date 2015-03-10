@@ -21,6 +21,19 @@ gulp.task('open', function() {
            pipe(shell("open https://github.com/crguezl/how-jquery-works-tutorial/tree/getallparams"));
 });
 
+gulp.task('test', function() {
+  // Be sure to return the stream
+  return gulp.src([])
+    .pipe(karma({
+      configFile: 'karma.conf.js',
+      action: 'run'
+    }))
+    .on('error', function(err) {
+      // Make sure failed tests cause gulp to exit non-zero
+      throw err;
+    });
+});
+
 /*
 * Configuración de la tarea 'demo'
 */

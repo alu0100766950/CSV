@@ -1,8 +1,15 @@
 var assert = chai.assert;
 
   suite('CSV', function() {
+    setup(function(){
+      if (typeof __html__ !== 'undefined') {
+        document.body.innerHTML = __html__["tests/testsk.html"];
+        original = document.getElementById("original");
+        finaltable = document.getElementById("finaltable");
+      }
+    });
     test('4,5\n4,5,6 = con error', function() {
-      var texto = "4,5" + "\n" + 
+      var texto = "4,5" + "\n" +
                   "4,5,6";
       original.value = texto;
       calculate();
@@ -17,7 +24,7 @@ var assert = chai.assert;
       assert.deepEqual(finaltable.innerHTML, texto2);
     });
     test('4,5\n4,5 = sin error', function() {
-      var texto = "4,5" + "\n" + 
+      var texto = "4,5" + "\n" +
                   "4,5";
       original.value = texto;
       calculate();
