@@ -2,9 +2,9 @@ var assert = chai.assert;
 
   suite('CSV', function() {
     test('4,5\n4,5,6 = error', function() {
-      var texto = "4,5" +
+      var texto = "4,5" + '\n' + 
                   "4,5,6";
-      original.value = var;
+      original.value = texto;
       calculate();
       var texto2 = "<p>\n<table class=\"center\" id=\"result\">" +
                   "<tr>" +
