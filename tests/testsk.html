@@ -10,15 +10,14 @@
   </head>
   <body>
     <div id="mocha"></div>
-    <input id="original" placeholder="32F" size="50">
-    <span class="output" id="converted"></span>
-    <span class="output" id="converted2"></span>
+    <textarea id="original" cols = "80" rows = "5"></textarea>
+    <span class="output" id="finaltable"></span>
 
     <div id="messages"></div>
     <div id="fixtures"></div>
     <script src="chai.js"></script>
     <script src="mocha.js"></script>
-    <script src="../temperature.js" data-cover></script>
+    <script src="../csv.js" data-cover></script>
     <script>mocha.setup('tdd')</script>
     <script src="tests.js"></script>
     <script>
