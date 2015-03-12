@@ -24,6 +24,7 @@ module.exports = function(config) {
       'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js',
       '*.js',
       'tests/*.js',
+      //{pattern:'tests/mocha.css', wactched:false, included:false, served:true},
       './tests/testsk.html'
     ],
 
