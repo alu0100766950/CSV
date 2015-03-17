@@ -26,5 +26,7 @@ body
 }
 #letras {font-size: 160%; color:#A05B81;}
 #letrasMenores {color:#FFFFFF;}
-button {display: block; margin-left: auto; margin-right: auto; }
+button.tabla {display: block; margin-left: auto; margin-right: auto; }
 p.center {text-align: center; }
+
+footer { position: relative; margin-top: 0px; height: 40px; padding:5px 0px; clear: both; color: #fff; text-align: center; }

@@ -2,7 +2,7 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 
 $(document).ready(function() {
-   $("button").click(function() {
+   $("button#crear").click(function() {
      calculate();
    });
  });
@@ -21,13 +21,13 @@ function calculate() {
             "                           <% }); %>";
 
   if (window.localStorage) localStorage.original  = temp;
-  
+
   for(var t in lines) {
     var temp = lines[t];
     var m = temp.match(regexp);
     var result = [];
     var error = false;
-    
+
     if (m) {
       if (commonLength && (commonLength != m.length)) {
         //alert('ERROR! row <'+temp+'> has '+m.length+' items!');
@@ -47,7 +47,7 @@ function calculate() {
       var tr = error? '<tr class="error">' : '<tr>';
       r.push(tr+_.template(row, {items : result})+"</tr>");
     }
-    
+
     else {
       alert('ERROR! row '+temp+' does not look as legal CSV');
       error = true;
