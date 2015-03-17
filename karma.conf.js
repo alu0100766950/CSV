@@ -31,7 +31,8 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      'gulpfile.js'
+      'gulpfile.js',
+	'app.js'
     ],
 
 
@@ -74,4 +75,9 @@ module.exports = function(config) {
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false
   });
+  if(process.env.TRAVIS){
+    configuration.browsers = ['Firefox'];
+   }
+
+   config.set(configuration);
 };
