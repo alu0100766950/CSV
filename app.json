@@ -1,0 +1,7 @@
+{
+  "name": "CSV",
+  "description": "Practica CSV",
+  "repository": "https://github.com/alu0100766950/CSV/tree/gh-pages",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}
