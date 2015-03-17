@@ -5,22 +5,26 @@ html *
    font-family: Arial;
 }
 
-h1            { text-align: center; font-size: x-large; }
-th, td        { vertical-align: top; text-align: right; }
+h1            { text-align: center; font-size: 300%; color:#FFFFFF}
+th, td        { vertical-align: top; text-align: right;}
 /* #finaltable  * { color: white; background-color: black; }   */
 
 /* #finaltable table { border-collapse:collapse; } */
 /* #finaltable table, td { border:1px solid white; } */
-tr:hover td { font-size: 200%; }
+tr:hover td { font-size:200% }
 tr:nth-child(odd)    { background-color:#eee; }
 tr:nth-child(even)    { background-color:#00FF66; }
-input        { text-align: right;  border: none;       }     /* Align input to the right  */
-textarea     { border: outset; border-color: white;       }
-table        { border: inset; border-color: white; border-spacing: 10px 10px; border-collapse: separate}
+input        { text-align: right;  border: none;     }     /* Align input to the right  */
+textarea     { border: outset; border-color: white;    }
+table        { border: inset; border-color: white;}
 table.center { margin-left:auto; margin-right:auto; }
-#result      { border-color: red; }
-tr.error       { background-color: red; }
+#result      { border-color: red;}
+tr.error       { background-color: red;}
 body
 {
- background-color:#b0c4de;  /* blue */
+ background:url("./img/fondo.jpeg");
 }
+#letras {font-size: 160%; color:#A05B81;}
+#letrasMenores {color:#FFFFFF;}
+button {display: block; margin-left: auto; margin-right: auto; }
+p.center {text-align: center; }
