@@ -2,6 +2,7 @@ var _ = require('underscore');
 var $ = require('jquery');
 var express = require('express');
 var app = express();
+var http = require('http').Server(app);
 var path = require('path');
 var expressLayouts = require('express-ejs-layouts');
 
