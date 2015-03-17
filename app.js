@@ -1,5 +1,5 @@
-var _ = require('https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min');
-var $ = require('jquery/starterkit/jquery');
+var _ = require('underscore');
+var $ = require('jquery');
 var express = require('express');
 var app = express();
 var path = require('path');
