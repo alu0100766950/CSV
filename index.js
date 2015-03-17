@@ -1,10 +1,11 @@
-var _ = require('underscore');
+var _ = require('node_modules/underscore');
 var $ = require('jquery');
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var path = require('path');
 var expressLayouts = require('express-ejs-layouts');
+var WORKERS = process.env.WEB_CONCURRENCY || 1;
 
 app.set('port', (process.env.PORT || 5000));
 
