@@ -19,6 +19,7 @@ function calculate() {
   var row = "<% _.each(items, function(name) { %>" +
             "                <td><%= name %></td>" +
             "                           <% }); %>";
+  // var row = document.getElementById('fillTable').innerHTML;
 
   if (window.localStorage) localStorage.original  = temp;
 
