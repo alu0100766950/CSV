@@ -1,4 +1,4 @@
-var _ = require('node_modules/underscore');
+var _ = require('underscore');
 var $ = require('jquery');
 var express = require('express');
 var app = express();
