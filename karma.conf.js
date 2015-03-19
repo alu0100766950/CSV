@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Tue Mar 10 2015 16:50:47 GMT+0000 (WET)
+// Generated on Thu Mar 19 2015 09:10:55 GMT+0000 (WET)
 
 module.exports = function(config) {
   config.set({
@@ -12,11 +12,12 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['mocha'],
 
-    client: {
+	client: {
       mocha: {
         ui: 'tdd'
       }
     },
+
 
     // list of files / patterns to load in the browser
     files: [
@@ -24,7 +25,6 @@ module.exports = function(config) {
       'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js',
       '*.js',
       'tests/*.js',
-      //{pattern:'tests/mocha.css', wactched:false, included:false, served:true},
       './tests/testsk.html'
     ],
 
@@ -32,14 +32,12 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
       'gulpfile.js',
-	'index.js'
+      'index.js'
     ],
-
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      './tests/testsk.html': ['html2js']
     },
 
 
@@ -75,9 +73,4 @@ module.exports = function(config) {
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false
   });
-  if(process.env.TRAVIS){
-    configuration.browsers = ['Firefox'];
-   }
-
-   config.set(configuration);
 };
